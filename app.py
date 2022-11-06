@@ -13,6 +13,16 @@ def main():
 
     st.set_page_config(layout="wide")
 
+    font_css = """
+        <style>
+        button[data-baseweb="tab"] {
+        font-size: 26px;
+        }
+        </style>
+        """
+
+    st.write(font_css, unsafe_allow_html=True)
+
     tabs = st.tabs(('About Me','Panorama Image'))
 
     # UI Options 
